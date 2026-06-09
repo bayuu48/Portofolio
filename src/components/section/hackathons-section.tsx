@@ -12,27 +12,28 @@ export default function HackathonsSection() {
           <div className="flex items-center w-full">
             <div className="flex-1 h-px bg-linear-to-r from-transparent from-5% via-border via-95% to-transparent" />
             <div className="border bg-primary z-10 rounded-xl px-4 py-1">
-              <span className="text-background text-sm font-medium">Hackathons</span>
+              <span className="text-background text-sm font-medium">Achievements</span>
             </div>
             <div className="flex-1 h-px bg-linear-to-l from-transparent from-5% via-border via-95% to-transparent" />
           </div>
           <div className="flex flex-col gap-y-3 items-center justify-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl">I like building things</h2>
             <p className="text-muted-foreground md:text-lg/relaxed lg:text-base/relaxed xl:text-lg/relaxed text-balance text-center">
-              During my time in university, I attended {DATA.hackathons.length}+
-              hackathons. People from around the country would come together and
-              build incredible things in 2-3 days. It was eye-opening to see the endless possibilities brought to life by a group of motivated and passionate individuals.
+              During my time in vocational school, I attended {DATA.Achivments.length}+ Achivments.
+              I dive deep into bringing ideas to life.
+              Whether it's coding a new software project or wireframing a fresh UI/UX layout, I love the process of creating from scratch.
+              For me, it is always eye-opening to see how combining design and clean code can solve real-world problems and open up endless possibilities.
             </p>
           </div>
         </div>
         <Timeline>
-          {DATA.hackathons.map((hackathon) => (
-            <TimelineItem key={hackathon.title + hackathon.dates} className="w-full flex items-start justify-between gap-10">
+          {DATA.Achivments.map((achivment) => (
+            <TimelineItem key={achivment.title + achivment.dates} className="w-full flex items-start justify-between gap-10">
               <TimelineConnectItem className="flex items-start justify-center">
-                {hackathon.image ? (
+                {achivment.image ? (
                   <img
-                    src={hackathon.image}
-                    alt={hackathon.title}
+                    src={achivment.image}
+                    alt={achivment.title}
                     className="size-10 bg-card z-10 shrink-0 overflow-hidden p-1 border rounded-full shadow ring-2 ring-border object-contain flex-none"
                   />
                 ) : (
@@ -40,32 +41,32 @@ export default function HackathonsSection() {
                 )}
               </TimelineConnectItem>
               <div className="flex flex-1 flex-col justify-start gap-2 min-w-0">
-                {hackathon.dates && (
-                  <time className="text-xs text-muted-foreground">{hackathon.dates}</time>
+                {achivment.dates && (
+                  <time className="text-xs text-muted-foreground">{achivment.dates}</time>
                 )}
-                {hackathon.title && (
-                  <h3 className="font-semibold leading-none">{hackathon.title}</h3>
+                {achivment.title && (
+                  <h3 className="font-semibold leading-none">{achivment.title}</h3>
                 )}
-                {hackathon.location && (
-                  <p className="text-sm text-muted-foreground">{hackathon.location}</p>
+                {achivment.location && (
+                  <p className="text-sm text-muted-foreground">{achivment.location}</p>
                 )}
-                {hackathon.description && (
+                {achivment.description && (
                   <p className="text-sm text-muted-foreground leading-relaxed wrap-break-word">
-                    {hackathon.description}
+                    {achivment.description}
                   </p>
                 )}
-                {hackathon.links && hackathon.links.length > 0 && (
+                {achivment.links && achivment.links.length > 0 && (
                   <div className="mt-1 flex flex-row flex-wrap items-start gap-2">
-                    {hackathon.links.map((link, idx) => (
+                    {achivment.links.map((link, idx) => (
                       <Link
-                        href={link.href}
+                        href={link.href} //href
                         key={idx}
                         target="_blank"
                         rel="noopener noreferrer"
                       >
                         <Badge className="flex items-center gap-1.5 text-xs bg-primary text-primary-foreground">
-                          {link.icon}
-                          {link.title}
+                          {link.icon} {/* icon */}
+                          {link.title} {/* title */}
                         </Badge>
                       </Link>
                     ))}
