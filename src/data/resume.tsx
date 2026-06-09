@@ -190,7 +190,7 @@ export const DATA = {
         {
           title: "Hashnode",
           icon: <Icons.globe className="h-4 w-4" />,
-          href: "",
+          href: "https://super-awesome.hashnode.dev/smart-osis-sistem-web-untuk-pengurus-yang-lebih-cepat",
         },
         {
           title: "Instagram",
