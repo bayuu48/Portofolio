@@ -26,7 +26,7 @@ export const DATA = {
     "Siswa SMKN 8 Malang Jurusan RPL yang antusias.saya juga suka membantu dan saya aktif di social media Instagram",
   summary:
     "I am a Software Engineering (RPL) student at SMK 8 Malang with a deep passion for digital creation. While I haven't jumped into formal competitions yet, I spend my time bridging the gap between code and visual design through UI/UX and Graphic Design. I love exploring new technologies and am always looking for the next exciting challenge to build.",
-  avatarUrl: "/gw.jpg",
+  avatarUrl: "/gw.jpeg",
   skills: [
     { name: "React", icon: ReactLight },
     { name: "Next.js", icon: NextjsIconDark },
