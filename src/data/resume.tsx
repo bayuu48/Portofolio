@@ -23,7 +23,7 @@ export const DATA = {
   location: "Malang, Indonesia",
   locationLink: "https://www.google.com/maps/place/Malang",
   description:
-    "Siswa SMKN 8 Malang Jurusan RPL yang antusias.saya juga suka membantu dan saya aktif di social media Instagram",
+    "I'm software engineering student & aspiring UI/UX designer base in Malang",
   summary:
     "I am a Software Engineering (RPL) student at SMK 8 Malang with a deep passion for digital creation. While I haven't jumped into formal competitions yet, I spend my time bridging the gap between code and visual design through UI/UX and Graphic Design. I love exploring new technologies and am always looking for the next exciting challenge to build.",
   avatarUrl: "/gw.jpeg",
